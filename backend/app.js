@@ -5,6 +5,7 @@ const app = express();
 // Middleware per il parsing delle richieste in arrivo
 app.use(bodyParser.urlencoded({ extended: true }));
 
+
 // Pagina web principale
 app.get('/', (req, res) => {
     res.send(`
